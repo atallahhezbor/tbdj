@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tbdj</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+   <div class="navbar navbar-default extended">
+    <div class="navbar-header"> <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-headphones"></span>  TBDJ</a>
+
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="active"> <a href="/streams">Your Streams</a>
+
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="active"> <a href="/profile">Profile</a> 
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+           <% if user_signed_in? %> 
+           		<li class="active">
+            		<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>     
+        		</li>
+        	<% else %>
+        		<li class="active"> 
+	    	        <a href="#" id="login-button">Login</a>
+    		    </li>   
+	        <% end %> 
+
+        </ul>
+    </div>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

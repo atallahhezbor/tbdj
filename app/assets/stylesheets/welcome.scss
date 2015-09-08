@@ -1,0 +1,126 @@
+#motto {
+    min-height: 400px;
+}
+
+#motto > h1 {
+    color: white;
+    opacity: .9
+}
+
+.top-content {
+    background-image: image-url("img_80892.jpg");
+    background-position: center;
+    background-size: 100% 200%;
+}
+
+.top-content {
+    /*background-color: #7FC995;*/
+    background-color:#DBDBDB;
+}
+.box-content {
+    margin-top: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 5px 6px 5px 0px rgba(64, 64, 64, 1);
+    -moz-box-shadow: 5px 6px 5px 0px rgba(64, 64, 64, 1);
+    box-shadow: 5px 6px 5px 0px rgba(64, 64, 64, 1);
+    border-radius:2px;
+}
+.box-header {
+    padding-top:10px;
+    position: relative;
+    color: #686868;
+    border-bottom: thin solid #ccc
+}
+
+.box-header > p {
+    font-size: 22px;
+
+}
+
+.center-content {
+    margin-top: 70px;
+}
+.center-box-header {
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    color: #686868;
+}
+.center-content > .box-with-shadow > .box-content {
+}
+.vibe-row {
+    margin-bottom: 10px;
+    padding-top:10px;
+}
+.line {
+    border-bottom: thin solid #ccc;
+    left: 10%
+}
+.vibe-row span {
+    font-weight: lighter;
+    font-size: 12px
+}
+.center-box-header p:first-child {
+    padding-top: 10px;
+}
+.center-box-header p:last-child {
+    padding-bottom: 10px;
+}
+.center-box-header p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*Due to responsive design, row margin left is set to -30 for small displays*/
+ .row {
+    margin-left: 0px;
+}
+.about {
+    text-align: center;
+}
+.about h3 {
+    text-decoration: underline;
+}
+
+.pop-vibes > .box-content{
+    min-height: 200px;
+}
+
+.pop-streams > .box-content{
+    min-height: 200px
+}
+
+.center-nav {
+    color: #686868;
+    text-align: center;
+}
+
+.center-nav > h2 >a:link {
+    text-decoration: none;
+}
+
+.center-nav > h2 > a {
+    color: #686868;
+}
+
+.center-nav {
+    cursor: pointer;
+}
+ .center-nav:hover {
+    background-color: #87c4e8
+}
+
+.hide {
+    display: none;
+}
+
+a.hide:focus + .show { display: inline; }
+a.hide:focus { display: none; }
+
+a.hide:focus ~ #stream-form { display:none; }
+
+@media print {.hide, .show  { display: none; } }
+
+
+#login-form {
+    left: 500px;
+}
