@@ -11,4 +11,8 @@ module ApplicationHelper
   def devise_mapping
     @devise_mapping ||= Devise.mappings[:user]
   end
+
+  def top
+  	@top_vibes = Vibe.all.limit(5)
+  end
 end

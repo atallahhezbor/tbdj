@@ -1,0 +1,21 @@
+<div class="col-md-3 col-md-offset-1 box-content">
+
+	<div class="box-header">
+		<p>Top Vibes</p>
+	</div>
+	<% @top_vibes.each do |vibe| %>
+	<div class="row vibe-row">
+        <div class="col-xs-8 "> <h5><%= vibe.title %></h5>
+
+        </div>
+        <!-- <div class="col-xs-4 pull-right"> <span>14 listeners</span>
+
+        </div> -->
+        <div class="col-xs-10 line"></div>
+    </div>
+    <%end%>
+
+    <div class="form-group text-center" >
+    	<%= button_to "Create your own!", new_vibe_path, :method => "get", :class => "btn btn-primary"%>    	
+    </div>
+</div>

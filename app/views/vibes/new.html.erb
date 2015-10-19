@@ -1,0 +1,17 @@
+<div class="box-header">
+  <p>Create a Vibe</p>
+</div>
+<br/>
+
+<%= form_for(@vibe) do |f| %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_area :title %>
+  </div>  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
